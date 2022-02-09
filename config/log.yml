@@ -1,0 +1,3 @@
+---
+log_path: "/tmp/zhihu-%s"
+log_size: 32
