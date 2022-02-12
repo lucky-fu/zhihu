@@ -1,0 +1,8 @@
+---
+host: "test"
+port: "12"
+db: 0
+password: "234"
+connect_timeout: 1
+write_timeout: 0.5
+read_timeout: 0.5

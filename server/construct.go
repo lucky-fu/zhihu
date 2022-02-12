@@ -13,5 +13,6 @@ func construct() {
 	middleware.LogBuesiness(map[string]interface{}{
 		"test": "json",
 	}, "test")
+	middleware.InitRedis()
 	fmt.Println(middleware.GetConfig("test.url"))
 }
