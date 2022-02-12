@@ -9,5 +9,9 @@ import (
 func construct() {
 	middleware.InitRuntime()
 	middleware.InitConfig()
- 	fmt.Println(middleware.GetConfig("test.url"))
+	middleware.InitLog("/tmp/zhihu", 32)
+	middleware.LogBuesiness(map[string]interface{}{
+		"test": "json",
+	}, "test")
+	fmt.Println(middleware.GetConfig("test.url"))
 }
