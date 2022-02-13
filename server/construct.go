@@ -14,5 +14,6 @@ func construct() {
 		"test": "json",
 	}, "test")
 	middleware.InitRedis()
+	middleware.InitMysqlConn()
 	fmt.Println(middleware.GetConfig("test.url"))
 }

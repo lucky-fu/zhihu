@@ -86,3 +86,19 @@ func GetRedisConfig(path string) (*define.ConfigRedis, error) {
 
 	return &retConfig, err
 }
+
+// GetDBConfig ...
+func GetDBConfig(path string) (*define.ConfigDB, error) {
+	var (
+		retConfig define.ConfigDB
+	)
+
+	rawConfig, err := get(path)
+	if err != nil {
+		return nil, err
+	}
+
+	err = mapstructure.Decode(rawConfig, &retConfig)
+
+	return &retConfig, err
+}

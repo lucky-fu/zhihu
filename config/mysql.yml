@@ -1,0 +1,7 @@
+write_host: "test"
+write_username: "root"
+write_password: "21212"
+read_host: "test"
+read_username: "root"
+read_password: "231231"
+database: "fdsa"
